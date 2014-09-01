@@ -2,7 +2,7 @@ FROM grayindustries/docker-sensu-base
 MAINTAINER Greg Poirier <grep@gray.industries>
 
 # Basic sensu-server settings
-ADD files/settings.json /etc/sensu/settings.json
+ADD files/config.json /etc/sensu/config.json
 # Sync with a local directory or a data volume container
 VOLUME /etc/sensu/conf.d
 VOLUME /etc/sensu/extensions.d
